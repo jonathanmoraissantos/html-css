@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 3px;
+            margin-bottom: 9px;
+        }
+
+        article>aside {
+            background-color: rgb(109, 108, 108);
+            color: white;
+            padding: 3px;
+            box-shadow: 4px 4px 9px 3px rgba(0, 0, 0, 0.116);
+        }
+
+        aside>p {
+            margin: 0;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0;
+        }
+
+        footer>p {
+            margin: 0;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        div > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        div>a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        section>div {
+            text-align: center;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu primeiro site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <div>
+                <a href="#">Esportes</a>
+                <a href="#">Política</a>
+                <a href="#">Tecnologia</a>
+                <a href="#">Entretenimento</a>
+                <a href="#">Shopping</a>
+            </div>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic dignissimos eveniet repellat ad odio in
+                    quas soluta provident fugit exercitationem illum ipsam quod, deserunt, harum sunt enim vitae
+                    voluptatem odit.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Notícias Internacionais</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod explicabo dolore vitae excepturi,
+                    aspernatur perferendis aperiam ex odit at fuga voluptas quaerat. Recusandae aperiam laborum impedit
+                    accusantium molestias dolorem et.</p>
+                <aside>
+                    <p>Artigo escrito por Jonathan Santos</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+
+</html>
