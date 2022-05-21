@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio paralaxe</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        #espaco{
+            background-color: purple;
+            background-image: url(images/espaco.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        #astronauta{
+            background-image: url(images/astronauta.png);
+            height: 65vh;
+            width: 65vh;
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+<body>
+    <div id="espaco">
+        <div id="astronauta">
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
