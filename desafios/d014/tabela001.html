@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Tabelas</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        table{
+        table {
             border-collapse: collapse;
-            width: 600px;            
+            width: 600px;
         }
 
-        caption{
+        caption {
             font-size: 1.3em;
             padding: 10px;
             font-weight: bold;
         }
 
-        td{
-            padding: 10px;
+        td {
+            padding: 5px;
             border: 1px solid black;
         }
 
-        td.num{
+        td.num {
             text-align: center;
         }
 
-        th, td.numtotal{
-            padding: 10px;
+        th,
+        td.numtotal {
+            padding: 5px;
             border: 1px solid black;
             background-color: gray;
             color: white;
@@ -38,28 +40,28 @@
             font-weight: bold;
         }
 
-        th.semfundo{
+        th.semfundo {
             color: black;
             background-color: white;
         }
 
-        th.titulototal{
-            
+        th.titulototal {
+            text-align: left;
         }
-
     </style>
 </head>
+
 <body>
 
     <table>
         <caption>
-            Boletim escolar
+            Boletim Escolar
         </caption>
         <thead>
             <tr>
                 <th scope="col" rowspan="2">Área</th>
                 <th scope="col" rowspan="2">Disciplinas</th>
-                <th scope="col" colspan="2">Notas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
                 <th scope="col" rowspan="2">Média</th>
             </tr>
             <tr>
@@ -97,8 +99,26 @@
                 <th class="titulototal" scope="row" colspan="4">Média de Exatas</th>
                 <td class="numtotal">0.0</td>
             </tr>
+            <tr>
+                <th class="semfundo" rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <th class="titulototal" scope="row" colspan="4">Média de humanas</th>
+                <td class="numtotal">0.0</td>
+            </tr>
         </tbody>
     </table>
-    
+
 </body>
+
 </html>
